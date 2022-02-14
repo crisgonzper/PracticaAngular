@@ -1,14 +1,22 @@
 <div class="bg-danger" >
     <span >Componente2</span>
-    <div class="toast show">
-      <div class="toast-header">
-        Toast Header
-        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    <p>{{curso1C2.nombre}}</p>
+    <p>{{curso1C2.descripcion}}</p>
+   
+    <p>{{contadorC2}}</p>
+
+    <div class="col-6">
+      <div class="form-group">
+          <label for="usr">Nombre:</label>
+          <input type="text" [(ngModel)]="curso1C2.nombre" class="form-control">
       </div>
-      <div class="toast-body">
-        Some text inside the toast body
+      <div class="form-group">
+          <label for="usr">Descripción:</label>
+          <input type="text" [(ngModel)]="curso1C2.descripcion" class="form-control">
       </div>
-    </div>
+      
+</div>
+    
    
   </div>
   

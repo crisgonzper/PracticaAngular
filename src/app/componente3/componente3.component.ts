@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Componente3Component implements OnInit {
 
-  title:string = 'Contador';
-  num:number=1;
+  @Input("curso2") curso2C3:any;
+
+  @Input("contador") contadorC3:any;
  
   constructor() {
     
